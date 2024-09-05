@@ -54,7 +54,7 @@ describe("Composant utilisateur : ", () => {
 
     await waitFor(() => {
       expect(
-        screen.getByText("Mediabox UI __ FRONT __ JEST AND TESTING LIBRARY")
+        screen.getByText("INNOVATION UI __ FRONT __ JEST AND TESTING LIBRARY")
       ).toBeInTheDocument();
       expect(screen.getByText("a bas")).toBeInTheDocument();
       expect(screen.getByText("alpha bas")).toBeInTheDocument();
