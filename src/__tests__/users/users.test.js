@@ -4,8 +4,6 @@ import "@testing-library/jest-dom";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import axios from "axios";
 import Users from "../../pages/Users/Users";
-import { confirmDialog } from "primereact/confirmdialog";
-import WithProviders from "../../utils/tools";
 
 beforeAll(() => {
   jest.spyOn(console, "warn").mockImplementation(jest.fn());
