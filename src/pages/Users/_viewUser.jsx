@@ -7,17 +7,8 @@ const initialUserInfo = {
   email: "",
   phone: "",
   website: "",
-  address: {
-    city: "",
-    street: "",
-    suite: "",
-    zipcode: "",
-  },
-  company: {
-    name: "",
-    catchPhrase: "",
-    bs: "",
-  },
+  address: "",
+  company: "",
 };
 
 function ViewUser(props) {
@@ -86,25 +77,19 @@ function ViewUser(props) {
           <div className="col-sm-12 col-md-6">
             <p>
               <span>City:</span>
-              <span>{userInfo.address.city}</span>
+              <span>{userInfo?.address}</span>
             </p>
           </div>
           <div className="col-sm-12 col-md-6">
             <p>
               <span>Street:</span>
-              <span>{userInfo.address.street}</span>
+              <span>{userInfo.address}</span>
             </p>
           </div>
           <div className="col-sm-12 col-md-6">
             <p>
               <span>Suite:</span>
-              <span>{userInfo.address.suite}</span>
-            </p>
-          </div>
-          <div className="col-sm-12 col-md-6">
-            <p>
-              <span>ZIP Code:</span>
-              <span>{userInfo.address.zipcode}</span>
+              <span>{userInfo.address}</span>
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import axios from "axios";
@@ -36,6 +36,8 @@ const Users = () => {
       <>
         <button
           className="btn btn-success"
+          name="voir"
+          data-testid="view-user-button"
           onClick={() => {
             setSelectedUserId(rowDate.id);
             setShowViewMode(true);
@@ -45,6 +47,7 @@ const Users = () => {
         </button>
         <button
           className="btn btn-primary"
+          data-testid="edit-user-button"
           onClick={() => {
             setSelectedUserId(rowDate.id);
             setShowEditMode(true);
@@ -54,6 +57,7 @@ const Users = () => {
         </button>
         <button
           className="btn btn-danger"
+          data-testid="delete-user-button"
           onClick={() => deleteUserConfirm(rowDate.id)}
         >
           <i className="pi pi-trash"></i>
@@ -87,8 +91,8 @@ const Users = () => {
   return (
     <div className="users-page">
       <div className="container">
-        <h1>Welcome to Crud Operations Crash Course.</h1>
-        <h3>We will use React, Primereact, Json-server and Axios</h3>
+        <h1>Mediabox UI __ FRONT __ JEST AND TESTING LIBRARY</h1>
+        <h3>We will use React __ Primereact __ Json-server and Axios</h3>
 
         <div className="users-list">
           <div className="addNewUser">
