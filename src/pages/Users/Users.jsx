@@ -91,8 +91,8 @@ const Users = () => {
   return (
     <div className="users-page">
       <div className="container">
-        <h1>Mediabox UI __ FRONT __ JEST AND TESTING LIBRARY</h1>
-        <h3>We will use React __ Primereact __ Json-server and Axios</h3>
+        <h1>INNOVATION UI __ FRONT __ JEST AND TESTING LIBRARY</h1>
+        <h3>React __ Primereact __ Json-server and Axios</h3>
 
         <div className="users-list">
           <div className="addNewUser">
